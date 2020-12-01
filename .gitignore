@@ -1,0 +1,29 @@
+.vscode/
+vultr/
+
+# env files
+.venv/
+.env
+
+# image files
+*.jpg
+*.png
+
+# local env
+local_settings.py
+
+# DB
+db.sqlite3
+
+# model
+*.xml
+*.h5
+
+# others
+requirements.txt
+create_key.py
+migrations/
+*__pycache__/
+.python-version
+poetry.lock
+pyproject.toml

@@ -1,0 +1,128 @@
+{% extends 'afterglow/base.html' %}
+{% load static %}
+{% block title %}プロフィールページ{% endblock %}
+
+{% block contents %}
+    <article class="prof">
+    <div class="container">
+        <h1 class="mt-3 mb-5 porf-h1">プロフィール</h1>
+    <section class="my_profile">
+        <div class="container">
+            <h2 class="title is-size-2">学歴</h2>
+                <table class="table">
+                    <tr><th>卒業年</th><th>学校名</th></tr>
+                    <tr><td class="td-size">2012.3</td><td>長野県大町高等学校（現：大町岳陽高等学校）</td></tr>
+                    <tr><td>2015.3(中途退学)</td><td>愛知学院大学商学部商学科</td></tr>
+                    <tr><td>2020.9</td><td>滋賀大学経済学部情報管理学科</td></tr>
+                </table>
+        </div>
+    </section>
+
+    <section class="my_profile">
+        <div class="container">
+            <h2 class="title is-size-2">職歴</h2>
+                <table class="table">
+                    <tr><th>期間</th><th>企業名</th></tr>
+                    <tr><td class="td-size">2012.5～2013.5</td><td>京楽エンタテインメント・リテイルズ株式会社</td></tr>
+                    <tr><td>2016.10～2018.12</td><td>株式会社タイトー</td></tr>
+                </table>
+        </div>
+    </section>
+
+    <section class="my_profile">
+        <div class="container">
+            <h2 class="title is-size-2">研究・開発実績</h2>
+                <table class="table">
+                    <tr><th>タイトル</th><th>内容</th></tr>
+                    <tr><td class="td-size">色識別によるアンケートシステム</td><td>
+                        大学の講義で学生に事前に色紙を配布し、「Aだと思うかBだと思うか」というようなアンケートをとる際に色紙を掲げてもらい、
+                        教室全体を撮影できるカメラから得られた映像から閾値判定による色検出とモルフォロジー変換を行うことで色紙を検出し、
+                        アンケートの集計を瞬時に行うことができるシステムです。主にOpenCVを使用して処理が行われており、今後、滋賀大学で実際に運用される予定となっています。
+                        
+                    </td></tr>
+                    <tr><td>バスケットボールのデータ収集</td><td>
+                        滋賀大学は滋賀県のプロバスケットボールチームと提携協定を結んでおり、試合の映像からデータを分析、フィードバックを行うプロジェクトに参加していました。
+                        私は試合映像から分析用のデータセットを作成する作業を担当しており、色検出と姿勢推定を利用することで、ズームイン、ズームアウトがある映像からコート上の
+                        選手の位置を記録することに成功しました。
+                    </td></tr>
+                </table>
+        </div>
+    </section>
+
+        <section class="my_profile">
+        <div class="container">
+            <h2 class="title is-size-2">スキル</h2>
+                <table class="table">
+                    <tr><th>使用言語・ライブラリなど</th><th>経験</th></tr>
+                    <tr><td class="td-size">Python3</td><td>
+                        主に研究で使用していました。データ収集や分析用のファイルは全てPythonで書いています。
+                    </td></tr>
+                    <tr><td>Java</td><td>
+                        大学の講義で使用しました。講義では代表的なソーティングのプログラムを作成しました。
+                    </td></tr>
+                    <tr><td>HTML&CSS</td><td>
+                        今回のサイト作成で使用しました。JavaScriptと合わせて現在勉強中です。
+                    </td></tr>
+                    <tr><td>Numpy、Pandas、seaborn、matplotlib</td><td>
+                        データ分析に使用される主要なライブラリは一通り使うことができます。
+                    </td></tr>
+                    <tr><td>TensorFlow</td><td>
+                        深層学習を用いた研究を行うときに使用しています。アニメキャラの画像認識モデルの作成にも使用しました。
+                    </td></tr>
+                    <tr><td>OpenCV</td><td>
+                        専門が画像認識分野なので、画像処理の必要があるときに使用しています。Pythonで書いています。
+                    </td></tr>
+                    <tr><td>Django</td><td>
+                        今回のサイト作成で使用しました。公式チュートリアルの投票アプリやブログサイトを作成して勉強した後、このサイトを作りました。
+                    </td></tr>
+                </table>
+        </div>
+    </section>
+
+        <section class="my_profile">
+        <div class="container">
+            <h2 class="title is-size-2">開発環境</h2>
+                <table class="table">
+                    <tr><th>種類</th><th>補足</th></tr>
+                    <tr><td class="td-size">Mac OS、Linux</td><td>
+                        LinuxはWindows 10のWSLを使ってUbuntuを使用しています。
+                    </td></tr>
+                    <tr><td>PyCharm</td><td>
+                        Pythonを使って作業をする際に使用しています。このサイトの作成にも使用しました。学生時代は無料でプロフェッショナル版を使うことができたのでとても感謝しています。
+                    </td></tr>
+                    <tr><td>Visual Studio Code</td><td>
+                        学生の身分ではなくなったのでPyCharmから乗り換えました。
+                    </td></tr>
+                </table>
+        </div>
+    </section>
+
+        <section class="my_profile">
+        <div class="container">
+            <h2 class="title is-size-2">その他ツール</h2>
+                <table class="table">
+                    <tr><th>名前</th><th>補足</th></tr>
+                    <tr><td class="td-size">GitHub</td><td>
+                        個人的に作成したプログラムのソースコードを管理するために使用しています。チームで使用したことはありませんが、ブランチやプルリクエスト、マージなどの流れは理解しています。
+                    </td></tr>
+                    <tr><td>Slack</td><td>
+                        大学のゼミや同じプロジェクトを行っているメンバーとの連絡や情報共有ツールとして使用していました。
+                        また、データサイエンティストやエンジニアとして働いている方々がデータ分析コンペに関しての情報共有を行っているチャンネルにも参加しています。
+                    </td></tr>
+                </table>
+        </div>
+    </section>
+
+            <section class="my_profile">
+        <div class="container">
+            <h2 class="title is-size-2">資格</h2>
+                <table class="table">
+                    <tr><th>種類</th>
+                    <tr><td class="td-size">JDLA Deep Learning for GENERAL</td></tr>
+                    <tr><td>普通自動車第一種免許</td></tr>
+                </table>
+        </div>
+    </section>
+    </div>
+    </article>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'afterglow/base.html' %}
+{% load static %}
+
+{% block title %}404エラー{% endblock %}
+
+{% block contents %}
+    <body class="error-body">
+    <div class="container">
+        <h1 class="mt-3 mb-5 error-h1">ページが見つかりませんでした。</h1>
+        <a href = "{% url 'afterglow:index' %}" class="btn btn-primary error-btn">Homeに戻る</a>
+    </div>
+    </body>
+{% endblock %}

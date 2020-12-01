@@ -1,0 +1,37 @@
+{% extends 'afterglow/base.html' %}
+{% load static %}
+
+{% block title %}お問い合わせページ{% endblock %}
+
+{% block active_inquiry %}active{% endblock %}
+
+{% block contents %}
+    <body style="background-color: #4d648d">
+<div class="container">
+        <h1 class="mt-3 mb-5" style="padding-top: 100px; padding-left: 20px; border-bottom: solid 5px #fff; color: #fff">お問い合わせ</h1>
+    <div class="row">
+            <form method="post">
+                {% csrf_token %}
+
+                {{ form.non_field_errors }}
+
+                {% for field in form %}
+                    <div class="form-group">
+                        <label for="{{ field.id_for_label }}" class="col-sm-12 col-form-label" style="color: #fff">
+                            <strong>{{ field.label_tag }}</strong>
+                        </label>
+                        <div class="col-sm-12">
+                            {{ field }}
+                            {{ field.errors }}
+                        </div>
+                    </div>
+                {% endfor %}
+
+                <div class="col-sm-8">
+                    <a href="{% url 'afterglow:sent' %}" class="btn btn-primary" type="submit" style="background-color: #4d648d; border-color: #fff">送信</a>
+                </div>
+            </form>
+    </div>
+</div>
+    </body>
+{% endblock %}
