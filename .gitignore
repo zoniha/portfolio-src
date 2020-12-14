@@ -20,7 +20,6 @@ db.sqlite3
 *.h5
 
 # others
-requirements.txt
 create_key.py
 migrations/
 *__pycache__/
