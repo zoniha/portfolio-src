@@ -6,7 +6,7 @@
 以下のリンクから確認できます。  
 [StackShare](https://stackshare.io/zawa/my-portfolio)
 
-キャラクター判別モデルの作成とユーザーが入力した画像データの処理の説明は[こちらのリポジトリ](https://github.com/zoniha/create-anime-detection-dataset)にファイルと説明があります。
+キャラクター判別モデルの作成とユーザーが入力した画像データの処理の説明は<a href="https://github.com/zoniha/create-anime-detection-dataset">こちらのリポジトリ</a>にファイルと説明があります。
 
 
 ※補足  
