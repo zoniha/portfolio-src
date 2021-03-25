@@ -1,0 +1,16 @@
+{% extends 'afterglow/base.html' %}
+{% load static %}
+
+{% block title %}送信完了ページ{% endblock %}
+
+{% block active_inquiry %}active{% endblock %}
+
+{% block contents %}
+    <body style="background-color: #4d648d">
+<div class="container">
+        <h1 class="mt-3 mb-5" style="padding-top: 100px; padding-left: 20px; border-bottom: solid 5px #fff; color: #fff">送信完了！</h1>
+        <h4 style="color: #fff">メッセージの送信が完了しました。</h4>
+        <a href = "{% url 'afterglow:index' %}" class="btn btn-primary" style="background-color: #4d648d; border-color: #fff">Homeに戻る</a>
+</div>
+    </body>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'afterglow/base.html' %}
+{% load static %}
+{% block title %}HOME | Zaw{% endblock %}
+
+{% block header %}
+  <header class="masthead text-center text-white">
+    <div class="masthead-content">
+      <div class="container">
+        <h1 class="masthead-heading mb-0"></h1>
+        <h2 class="masthead-subheading mb-0">AIアプリで遊んでみよう!</h2>
+        <p class="app-desc">アニメBanG Dream!に登場するバンドであるAfterglowのメンバーをAIが判別してくれます。</p>
+        <a href="{% url 'afterglow:afterglow_det' %}" class="btn-play btn btn-primary btn-xl rounded-pill mt-5 active">Let's　Play!</a>
+      </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+{% endblock %}
