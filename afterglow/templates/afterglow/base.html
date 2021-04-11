@@ -30,12 +30,15 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top bg-dark">
           <div class="container my-navbar">
-            <h1><a href='{% url 'afterglow:index' %}'><img id="logo" src="{% static 'afterglow/img/logo.png' %}"</a></h1>
+            <h1><a href='https://aspected-helios.herokuapp.com/'><img id="logo" src="{% static 'afterglow/img/logo.png' %}"</a></h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse my-nav" id="navbarResponsive">
               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://aspected-helios.herokuapp.com/enif/">HOME</a>
+                  </li>
                   <li class="nav-item">
                       <a class="nav-link" href="{% url 'afterglow:afterglow_det' %}">APP</a>
                   </li>
